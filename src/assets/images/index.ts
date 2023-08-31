@@ -1,2 +1,8 @@
 export { default as logo } from './Logo.svg'
 export { default as image1 } from './BG.png'
+export { default as ilustration1 } from './Ilustration1.png'
+export { default as ilustration2 } from './Ilustration2.png'
+export { default as bg2 } from './BG2.png'
+export { default as banner1 } from './Banner1.png'
+export { default as banner2 } from './Banner2.png'
+export { default as blog1 } from './Blog1.png'
