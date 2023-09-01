@@ -1,3 +1,7 @@
 import HomePage from './homepage/page'
 
-export default HomePage
+const App = () => {
+  return <HomePage />
+}
+
+export default App

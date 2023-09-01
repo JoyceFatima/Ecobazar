@@ -13,10 +13,10 @@ import './style.css'
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
 
 interface ImageCarouselProps {
-  images: string[]
+  image: string[]
 }
 
-export default function ImageCarousel({ images }: ImageCarouselProps) {
+export default function ImageCarousel({ image }: ImageCarouselProps) {
   return (
     <>
       <Swiper
@@ -28,7 +28,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-        {images.map((image, index) => (
+        {image.map((image, index) => (
           <SwiperSlide key={index}>
             <img src={image} alt={`Image ${index}`} />
           </SwiperSlide>
