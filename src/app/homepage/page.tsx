@@ -287,7 +287,7 @@ export default function HomePage() {
       </div>
       <div className="mx-56">
         <div className="flex justify-between items-center my-20">
-        <a href="">
+          <a href="">
             <img src={steps.src} alt="" />
           </a>
 
