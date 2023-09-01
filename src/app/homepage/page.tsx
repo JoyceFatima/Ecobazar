@@ -18,6 +18,7 @@ import {
   backgroundFood,
   BGShop,
   HotSale,
+  steps,
 } from '@/assets'
 
 import Header from '../../components/Header'
@@ -286,6 +287,10 @@ export default function HomePage() {
       </div>
       <div className="mx-56">
         <div className="flex justify-between items-center my-20">
+        <a href="">
+            <img src={steps.src} alt="" />
+          </a>
+
           <a className="hover:fill-green-500" href="">
             <img src={food.src} alt="" />
           </a>
