@@ -14,7 +14,6 @@ import {
   twitter,
   visa,
 } from '@/assets'
-import Logo from '../Logo'
 import DownloadApp from '../DownloadApp'
 
 const Footer = () => {

@@ -1,4 +1,4 @@
-import { tag, userAdmin, comment } from '@/assets'
+import { tag, comment } from '@/assets'
 
 interface BlogCardProps {
   image: string
