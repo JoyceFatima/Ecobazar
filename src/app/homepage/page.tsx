@@ -48,7 +48,7 @@ import Feature from '@/sections/Feature'
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="min-w-[1820px]">
       <Header companyName="123-456-7890" />
       <ImageCarousel image={carosselImages} />
       <Feature />
