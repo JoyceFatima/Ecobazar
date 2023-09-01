@@ -2,7 +2,7 @@ import { BGShop } from '@/assets'
 import SectionFood from '@/components/SectionFood'
 import TitleWithLink from '@/components/TitleWithLinkProps'
 
-const ShopCategories: React.FC = () => {
+const ShopCategories = () => {
   return (
     <>
       <div
