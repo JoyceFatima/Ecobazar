@@ -17,6 +17,20 @@ const CustomCard = ({ image, price, title, sale }: CustomCardProps) => {
     setIsSelected(!isSelected)
   }
 
+  const formattedPrice = (value?: number) => {
+    if (!value) {
+      return ''
+    }
+
+    const options = {
+      style: 'currency',
+      currency: 'USD',
+    }
+
+    const formatter = new Intl.NumberFormat('en', options)
+    return formatter.format(value)
+  }
+
   return (
     <div
       className={`w-[19.5rem] p-4 border mx-3 border-gray-300 rounded-[0.5rem] transition duration-300 ease-in-out transform ${
@@ -52,7 +66,9 @@ const CustomCard = ({ image, price, title, sale }: CustomCardProps) => {
       <div className="flex justify-between">
         <div className="py-2">
           <span className={'block text-gray-700'}>{title}</span>
-          <span className={'block text-black font-semibold'}>{price}</span>
+          <span className={'block text-black font-semibold'}>
+            {formattedPrice(price)}
+          </span>
           <div className="flex items-center">
             <span className="text-yellow-500">⭐️</span>
             <span className="text-yellow-500">⭐️</span>
@@ -62,8 +78,8 @@ const CustomCard = ({ image, price, title, sale }: CustomCardProps) => {
           </div>
         </div>
         <div
-          className={`w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-gray-200 transition duration-300 ease-in-out transform ${
-            isSelected ? 'bg-emerald-400' : ''
+          className={`w-10 h-10 flex items-center justify-center rounded-full cursor-pointer transition duration-300 ease-in-out transform ${
+            isSelected ? 'bg-emerald-400' : 'bg-gray-200'
           }`}
         >
           <img

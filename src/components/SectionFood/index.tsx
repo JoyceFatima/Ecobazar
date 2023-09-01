@@ -9,14 +9,10 @@ const SectionFood = () => {
   const [selectedFood, setSelectedFood] = useState(0)
 
   const subtracted = () => {
-    if (selectedFood >= 0) {
-      setSelectedFood(selectedFood - 1)
-    }
+    setSelectedFood(selectedFood - 1)
   }
   const sum = () => {
-    if (selectedFood <= buttonCards.length - 1) {
-      setSelectedFood(selectedFood + 1)
-    }
+    setSelectedFood(selectedFood + 1)
   }
   return (
     <div className="flex items-center gap-4 cursor-pointer justify-center mx-56">

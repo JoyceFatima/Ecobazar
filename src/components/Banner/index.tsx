@@ -24,10 +24,10 @@ const Banner = ({
 
     const options = {
       style: 'currency',
-      currency: 'BRL',
+      currency: 'USD',
     }
 
-    const formatter = new Intl.NumberFormat('pt-BR', options)
+    const formatter = new Intl.NumberFormat('en', options)
     return formatter.format(value)
   }
 

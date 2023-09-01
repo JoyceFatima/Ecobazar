@@ -1,9 +1,17 @@
 import {
   BGCarossel1,
   Product1,
+  Product10,
+  Product11,
+  Product12,
   Product2,
   Product3,
   Product4,
+  Product5,
+  Product6,
+  Product7,
+  Product8,
+  Product9,
   bag,
   blog1,
   blog2,
@@ -160,23 +168,23 @@ export const carosselImages = [
 
 export const customCardProducts = [
   {
-    image: Product1.src,
+    image: Product4.src,
     title: 'Green Apple',
     price: 14.99,
     sale: 50,
   },
   {
-    image: Product2.src,
+    image: Product3.src,
     title: 'Chanise Cabbage',
     price: 14.99,
   },
   {
-    image: Product3.src,
+    image: Product2.src,
     title: 'Green Capsicum',
     price: 14.99,
   },
   {
-    image: Product4.src,
+    image: Product1.src,
     title: 'Ladies Finger',
     price: 14.99,
   },
@@ -184,29 +192,81 @@ export const customCardProducts = [
 
 export const bestSellerProducts = [
   {
-    image: Product1.src,
+    image: Product4.src,
     title: 'Green Apple',
-    price: 14.99,
-    sale: 50,
-  },
-  {
-    image: Product2.src,
-    title: 'Chanise Cabbage',
     price: 14.99,
   },
   {
     image: Product3.src,
+    title: 'Chanise Cabbage',
+    price: 14.99,
+  },
+  {
+    image: Product5.src,
     title: 'Green Lettuce',
     price: 14.99,
   },
   {
-    image: Product4.src,
+    image: Product6.src,
     title: 'Green Chili',
     price: 14.99,
   },
   {
-    image: Product4.src,
+    image: Product7.src,
     title: 'Corn',
+    price: 14.99,
+  },
+]
+
+export const hotDealsProducts = [
+  {
+    image: Product4.src,
+    title: 'Green Apple',
+    price: 14.99,
+  },
+  {
+    image: Product8.src,
+    title: 'Indian Malta',
+    price: 14.99,
+  },
+  {
+    image: Product5.src,
+    title: 'Green Lettuce',
+    price: 14.99,
+  },
+]
+
+export const bestSellersProducts = [
+  {
+    image: Product9.src,
+    title: 'Eggplant',
+    price: 14.99,
+  },
+  {
+    image: Product1.src,
+    title: 'Red Capsicum',
+    price: 14.99,
+  },
+  {
+    image: Product10.src,
+    title: 'Red Tomatos',
+    price: 14.99,
+  },
+]
+export const topRatedProducts = [
+  {
+    image: Product11.src,
+    title: 'Big Potatos',
+    price: 14.99,
+  },
+  {
+    image: Product7.src,
+    title: 'Corn',
+    price: 14.99,
+  },
+  {
+    image: Product12.src,
+    title: 'Fresh cauliflower',
     price: 14.99,
   },
 ]

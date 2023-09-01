@@ -1,3 +1,5 @@
+import { tag, userAdmin, comment } from '@/assets'
+
 interface BlogCardProps {
   image: string
   day: string
@@ -35,9 +37,18 @@ const BlogCard = ({
 
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <span className="text-gray-600">{theme}</span>
-          <span className="text-gray-600">{role}</span>
-          <p className="text-gray-600">{comments}</p>
+          <div className="flex items-center gap-2">
+            <img src={tag.src} alt="" />
+            <span className="text-gray-600">{theme}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            {/* <img src={userAdmin.src} alt="" /> */}
+            <span className="text-gray-600">{role}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <img src={comment.src} alt="" />
+            <p className="text-gray-600">{comments}</p>
+          </div>
         </div>
 
         <div className="mt-4">
